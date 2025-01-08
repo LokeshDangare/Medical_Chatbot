@@ -34,6 +34,14 @@ conda activate medchat
 pip install -r requirements.txt
 ```
 
+### Create a `.env` file in the root directory and add your Google and Pinecone API keys as follow:
+
+```ini
+GOOGLE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxx"
+PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxx"
+```
+
+
 ### Step 04 - Execute store_index.py file for storing embeddings in pinecone
 
 Execute it only one time for same data and if you change the data then only you need to execute it again.
@@ -47,4 +55,6 @@ python store_index.py
 ``` bash
 python app.py
 ```
+
+
 
