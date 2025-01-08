@@ -29,7 +29,22 @@ conda create -n medchat python=3.11 -y
 conda activate medchat
 ```
 
-### Step 3 - Install all requirements
+### Step 03 - Install all requirements
 ```bash
 pip install -r requirements.txt
 ```
+
+### Step 04 - Execute store_index.py file for storing embeddings in pinecone
+
+Execute it only one time for same data and if you change the data then only you need to execute it again.
+
+```bash
+python store_index.py
+```
+
+### Step 05 - Run an application.
+
+``` bash
+python app.py
+```
+
